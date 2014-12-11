@@ -10,6 +10,29 @@ I don't know who made the original jsfiddle demo. If you know, tell me and I wil
 - [ ] Underpants
 - [ ] Profit
 
+Syntax extensions?
+------------------
+Match syntax
+```
+match (val) in 
+    value => func
+    . . . 
+    _ => func
+end
+```
+
+With try
+```
+with (function) try
+    args,to,apply : matchValue => func
+    diff,args,here : matchValue => func'
+    or,even,a : differentMatchValue => func''
+    x,y,z : _ => x -> funx x # match any value, value always gets passed along?
+    _ => finalElse
+end
+```
+
+
 Example of extending
 --------------------
 For this syntax:
